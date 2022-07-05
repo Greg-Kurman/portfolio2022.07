@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Roboto:ital,wght@0,400;1,300;1,400&family=Tinos:ital,wght@0,700;1,400&display=swap");
+._container {
+  max-width: 856px;
+}
+
+.body {
+  max-width: 1152px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header__content {
+  display: flex;
+  max-width: 1032px;
+  width: 100%;
+  justify-content: flex-end;
+}
+.header__content img {
+  padding: 0 0 0 30%;
+  display: none;
+  width: 70px;
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+@media (max-width: 700px) {
+  .header__content {
+    justify-content: center;
+  }
+  .header__content img {
+    display: block;
+  }
+}
+.header__content .menu {
+  display: flex;
+  align-items: center;
+  height: 82px;
+  transition: all 0.3s ease;
+}
+.header__content .menu a {
+  margin: 0 0 0 12px;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Heebo";
+  text-decoration: none;
+  font-style: normal;
+}
+.header__content .menu a:visited {
+  color: black;
+}
+.header__content .menu img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+@media (max-width: 700px) {
+  .header__content .menu {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    line-height: 60px;
+    position: relative;
+  }
+  .header__content .menu a {
+    font-size: 30px;
+  }
+  .header__content .menu img {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */

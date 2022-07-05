@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Roboto:ital,wght@0,400;1,300;1,400&family=Tinos:ital,wght@0,700;1,400&display=swap');
+
+._container {
+    max-width: 856px;
+}
+
+.body {
+    max-width: 1152px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header__content {
+    display: flex;
+    max-width: 1032px;
+    width: 100%;
+    justify-content: flex-end;
+
+    & img {
+        padding: 0 0 0 30%;
+        display: none;
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    @media (max-width: 700px) {
+        justify-content: center;
+        & img {
+            display: block;
+        }
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        height: 82px;
+        transition: all 0.3s ease;
+
+        & a {
+            margin: 0 0 0 12px;
+            font-weight: 500;
+            font-size: 20px;
+            font-family: 'Heebo';
+            text-decoration: none;
+            font-style: normal;
+            &:visited {
+                color: black;
+            }
+        }
+
+        & img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        @media (max-width: 700px) {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            line-height: 60px;
+            position: relative;
+
+            & a {
+                font-size: 30px;
+            }
+
+            & img {
+                display: block;
+            }
+        }
+    }
+
+}
