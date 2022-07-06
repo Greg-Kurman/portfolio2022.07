@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Roboto:ital,wght@0,400;1,300;1,400&family=Tinos:ital,wght@0,700;1,400&display=swap");
 ._container {
+  margin: 0 auto;
   max-width: 856px;
 }
 
 .body {
   max-width: 1152px;
+  color: #21243d;
 }
 
 .header {
@@ -76,4 +78,65 @@
   .header__content .menu img {
     display: block;
   }
+}
+
+.btn {
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  width: 208px;
+  height: 47px;
+  background: #FF6464;
+  border-radius: 2px;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+.btn:hover {
+  background: #c95e5e;
+}
+.btn:visited {
+  color: #fff;
+}
+
+.hello {
+  padding: 38px 0 71px 0;
+}
+
+.hello__container {
+  padding: 18px 0 0 0;
+  display: flex;
+}
+
+.hello__avatar img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 243px;
+  height: 243px;
+  border-radius: 50%;
+  -o-object-position: center;
+     object-position: center;
+  box-shadow: -5px 13px 0 0 #e2f8ff;
+}
+
+.hello__title {
+  padding: 0 0 15px 0;
+}
+
+.title {
+  font-size: 42px;
+  color: #21243d;
+  font-weight: 700;
+}
+
+.hello__text {
+  padding: 0 0 30px 0;
+}
+
+.hello__content {
+  padding: 0 12% 0 0;
 }/*# sourceMappingURL=style.css.map */
