@@ -6,7 +6,6 @@
 
 .body {
   max-width: 1152px;
-  color: #21243d;
 }
 
 .header {
@@ -52,6 +51,7 @@
   font-family: "Heebo";
   text-decoration: none;
   font-style: normal;
+  color: #21243d;
 }
 .header__content .menu a:visited {
   color: black;
@@ -159,6 +159,7 @@
 
 .hello__text {
   padding: 0 0 30px 0;
+  color: #21243d;
 }
 @media (max-width: 700px) {
   .hello__text {
@@ -185,6 +186,7 @@
   font-style: normal;
   font-weight: 400;
   padding: 20px 0 30px 0;
+  color: #21243d;
 }
 @media (max-width: 700px) {
   .title-post {
@@ -197,19 +199,39 @@
   margin: 0 0 0 17px;
 }
 
+@media (max-width: 550px) {
+  .works__wrapper {
+    display: flex;
+    overflow: auto;
+  }
+}
+
 .work__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   width: 246px;
   height: 180px;
   border-radius: 6px;
 }
 
 .works__item {
+  flex: 0 0 80%;
   display: flex;
   border-bottom: 1px solid #E0E0E0;
   padding: 40px 0;
+  color: #21243d;
+}
+@media (max-width: 550px) {
+  .works__item {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .works__title {
+  color: #21243d;
   font-family: "Heebo";
   font-style: normal;
   font-weight: 700;
@@ -218,6 +240,7 @@
 }
 
 .works__info {
+  color: #21243d;
   display: flex;
   padding: 0 0 17px 0;
 }
@@ -252,4 +275,20 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  color: #21243d;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0;
+  color: #21243d;
+}
+.icons img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }/*# sourceMappingURL=style.css.map */
