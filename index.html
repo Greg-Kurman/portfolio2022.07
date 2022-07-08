@@ -1,48 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
 
-    <!DOCTYPE html>
-    <html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Главная страница</title>
+</head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./style.css">
-        <title>Главная страница</title>
-    </head>
+<body>
+    <header class="header">
+        <div class="header__content">
+            <nav class="menu">
+                <a href="">Works</a>
+                <a href="">Blog</a>
+                <a href="">Contacts</a>
+            </nav>
+            <img src="https://freepngimg.com/thumb/burger/22388-5-burger-food.png" alt="">
 
-    <body>
-        <header class="header">
-            <div class="header__content">
-                <nav class="menu">
-                    <a href="">Works</a>
-                    <a href="">Blog</a>
-                    <a href="">Contacts</a>
-                </nav>
-                <img src="https://freepngimg.com/thumb/burger/22388-5-burger-food.png" alt="">
-
-            </div>
-        </header>
-        <main class="page">
-            <div class="hello">
-                <div class="hello__container _container">
-                    <div class="hello__content">
-                        <h1 class="hello__title title">Привет, Я Григорий, Frontend разработчик</h1>
-                        <div class="hello__text text">
-                            Верстка (HTML5/scss) исключительно адаптивно-отзывчивая на flexbox. При создании SPA
-                            использую Vue/React.
-                        </div>
-                        <a href="#" class="hello__btn btn">Скачать резюме</a>
+        </div>
+    </header>
+    <main class="page">
+        <section class="hello">
+            <div class="hello__container _container">
+                <div class="hello__content">
+                    <h1 class="hello__title title">Привет, Я Григорий, Frontend разработчик</h1>
+                    <div class="hello__text text">
+                        Верстка (HTML5/scss) исключительно адаптивно-отзывчивая на flexbox. При создании SPA
+                        использую Vue/React.
                     </div>
-                    <div class="hello__avatar">
-                        <img src="./img/ava.jpg"
-                            alt="">
-                    </div>
+                    <a href="#" class="hello__btn btn">Скачать резюме</a>
+                </div>
+                <div class="hello__avatar">
+                    <img src="./img/ava.jpg" alt="">
                 </div>
             </div>
-        </main>
-        <footer>
+        </section>
+        <section class="works">
+            <div class="works__container _container">
+                <div class="works__title title-post">
+                    Мои работы
+                </div>
+                <div class="works__wrapper">
+                    <article class="works__item">
+                        <a href="#" class="work__image">
+                            <img src="./img/ava.jpg" alt="Work #1">
+                        </a>
+                        <div class="works__body">
+                            <div class="works__title">
+                                Designing Dashbording
+                            </div>
+                            <div class="works__info">
+                                <div class="works__year">
+                                    2022
+                                </div>
+                                <div class="works__category">
+                                    Dashboard
+                                </div>
+                              
+                            </div>
+                            <div class="works__text text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias temporibus animi
+                                velit
+                                quaerat, sequi beatae omnis. Tempore fugit laudantium eligendi suscipit esse fuga,
+                                iste
+                                quam libero eveniet, deserunt ducimus illo.
+                            </div>
+                    </article>
+                    <article class="works__item">
+                        <a href="#" class="work__image">
+                            <img src="./img/ava.jpg" alt="Work #1">
+                        </a>
+                        <div class="works__body">
+                            <div class="works__title">
+                                Designing Dashbording
+                            </div>
+                            <div class="works__info">
+                                <div class="works__year">
+                                    2022
+                                </div>
+                                <div class="works__category">
+                                    Dashboard
+                                </div>
+                              
+                            </div>
+                            <div class="works__text text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias temporibus animi
+                                velit
+                                quaerat, sequi beatae omnis. Tempore fugit laudantium eligendi suscipit esse fuga,
+                                iste
+                                quam libero eveniet, deserunt ducimus illo.
+                            </div>
+                    </article>
+                    <article class="works__item">
+                        <a href="#" class="work__image">
+                            <img src="./img/ava.jpg" alt="Work #1">
+                        </a>
+                        <div class="works__body">
+                            <div class="works__title">
+                                Designing Dashbording
+                            </div>
+                            <div class="works__info">
+                                <div class="works__year">
+                                    2022
+                                </div>
+                                <div class="works__category">
+                                    Dashboard
+                                </div>
+                              
+                            </div>
+                            <div class="works__text text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias temporibus animi
+                                velit
+                                quaerat, sequi beatae omnis. Tempore fugit laudantium eligendi suscipit esse fuga,
+                                iste
+                                quam libero eveniet, deserunt ducimus illo.
+                            </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
 
-        </footer>
-    </body>
+    </footer>
+</body>
 
-    </html>
+</html>
